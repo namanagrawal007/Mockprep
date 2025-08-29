@@ -16,7 +16,7 @@ const socketIO = require("socket.io"); // Import socket.io
 // Initialize socket.io on the same server
 const io = socketIO(server, {
   cors: {
-
+    origin:"https://mockprep-vv6k.onrender.com",
     credentials: true,
   },
   transports: ["websocket"], // Only use WebSockets
